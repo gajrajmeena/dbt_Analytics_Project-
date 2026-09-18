@@ -1,0 +1,10 @@
+dbt_project:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      role: ACCOUNTADMIN
+      warehouse: COMPUTE_WH
+      database: ANALYTICS
+      schema: PUBLIC
+      threads: 8
