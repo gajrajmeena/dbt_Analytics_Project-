@@ -1,4 +1,4 @@
-name: dbt_project
+name: dbt_fundamental_on_demand
 version: 1.0.0
 config-version: 2
 profile: dbt_project
@@ -15,5 +15,9 @@ macro-paths:
 snapshot-paths:
   - snapshots
 models:
-  dbt_project:
+ dbt_fundamental_on_demand:
+  staging:
     +materialized: view
+    
+  marts:
+    +materialized: table
